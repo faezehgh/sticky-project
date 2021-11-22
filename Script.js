@@ -25,10 +25,15 @@ function createNote(){
     var noteText = document.getElementById("note-text").value;
     var node0 = document.createElement("div");
     var node1 = document.createElement("h1");
+    var node2 = document.createElement("textarea")
+    node2.classList.add("changeColor");
+
+    node2.innerHTML = noteText;
+    node1.append(node2);
 
     node1.classList.add("p-3");
 
-    node1.innerHTML = noteText;
+    
 
     node1.setAttribute("style", "width:250px; height:250px; font-size:26px; padding:25; margin-top:10px; overflow:hidden; box-shadow:0px 10px 24px 0px rgba(0,0,0,0.75)");
 

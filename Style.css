@@ -61,3 +61,8 @@ svg{
     top: 4%;
 }
 
+.changeColor{
+    background: transparent;
+    box-shadow: none;
+}
+
